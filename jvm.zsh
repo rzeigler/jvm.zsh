@@ -1,5 +1,5 @@
 function use_java {
-    sys_java
+    default_java
     export JAVA_VERSION="$1"
     export JAVA_HOME=$(/usr/libexec/java_home -v ${JAVA_VERSION})
     path=("$JAVA_HOME/bin" $path)
